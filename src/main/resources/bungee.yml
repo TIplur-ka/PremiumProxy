@@ -1,0 +1,6 @@
+name: PremiumProxy
+version: '${project.version}'
+main: necode.angelitex.tiplur.detectpremiumplayer.PremiumProxy
+author: TIplur, AngeliTex
+softdepends: [Tabheads]
+description: Check the authenticity of the players' licenses when connecting to the server.
