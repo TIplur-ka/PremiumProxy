@@ -1,0 +1,52 @@
+#//=============================================\\
+#||                                            ||
+#||                PremiumProxy                ||
+#||                    0.4                     ||
+#||                                            ||
+#\\============================================//
+#
+#When using the plugin, be sure to use plugins that
+#allow licensed players to switch to online mode.
+#
+#При использовании плагина обязательно используйте плагины, которые
+#позволяют игрокам с лицензией перейти в online-mode.
+#
+#Spigot: TIplur
+
+#+-------------------------------------------------+
+#Plugin Messages
+#Сообщения плагина
+Messages:
+  #Prefix plugin
+  #Префикс плагина
+  Prefix: "&a[&6PremiumProxy&a]"
+  #Message format (false - JSON text | true - default text)
+  #Формат сообщений (false - JSON текст | true - обычный текст)
+  Format-Text: false
+  #Default text message
+  #Обычный текст сообщения
+  NotPremium-TEXT: "Login Error: Invalid session (&cSwitch to &nlicense mode&r&f)"
+  #JSON text message
+  #JSON текст сообщения
+  NotPremium-JSON:
+    #Message
+    #Сообщение
+    Text: "Login Error: Invalid session (&cSwitch to &nlicense mode&r&f)"
+    #Message Hover
+    #Сообщение, которое отображается при наведении.
+    Hover: "\n&eIf you have a license, please click to confirm.\nIf you have a pirate client, you will not be able to log in to this server.\n"
+    #Executed command when clicked
+    #Команда которая выполняется при клике.
+    Command: "/premium"
+#+-------------------------------------------------+
+
+#+-------------------------------------------------+
+Servers:
+  #Servers that will be checked for a license when logging in.
+  #Specify server names from the BungeeCord configuration.
+  #Серверы, которые будут проверены на наличие лицензии при входе на сервер.
+  #Укажите имена серверов из конфигурации BungeeCord.
+  Protect-Premium:
+    - server
+    - server2
+#+-------------------------------------------------+
