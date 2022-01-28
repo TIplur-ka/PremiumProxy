@@ -20,9 +20,9 @@ Messages:
   #Prefix plugin
   #Префикс плагина
   Prefix: "&a[&6PremiumProxy&a]"
-  #Message format (false - JSON text | true - default text)
-  #Формат сообщений (false - JSON текст | true - обычный текст)
-  Format-Text: false
+  #Message format (true - JSON text | false - default text)
+  #Формат сообщений (true - JSON текст | false - обычный текст)
+  Format-Text: true
   #Default text message
   #Обычный текст сообщения
   NotPremium-TEXT: "Login Error: Invalid session (&cSwitch to &nlicense mode&r&f)"
@@ -38,6 +38,25 @@ Messages:
     #Executed command when clicked
     #Команда которая выполняется при клике.
     Command: "/premium"
+  #Title text message
+  Title:
+    #Enable/Disable title
+    #Включение/Выключение сообщения на экране
+    Enable: true
+    #Title text
+    #Заголовок сообщения на экране
+    Title: "Login Error: Invalid session"
+    #SubTitle text
+    #Подзаголовок сообщения на экране
+    SubTitle: "(&cSwitch to &nlicense mode&r&f)"
+  #ActionBar text message
+  ActionBar:
+    #Enable/Disable actionbar
+    #Включение/Выключение сообщения над панелью инвентаря
+    Enable: true
+    #ActionBar text
+    #Текст сообщения над панелью инвентаря
+    Text: "Login Error: Invalid session (&cSwitch to &nlicense mode&r&f)"
 #+-------------------------------------------------+
 
 #+-------------------------------------------------+

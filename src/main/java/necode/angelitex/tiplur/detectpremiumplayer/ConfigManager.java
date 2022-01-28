@@ -34,8 +34,9 @@ public class ConfigManager {
         return str;
     }
 
+
     public boolean getBoolean(String key) {
-        return !this.config.getBoolean(key);
+        return this.config.getBoolean(key);
     }
 
     public List<String> getStringList(String key) {
